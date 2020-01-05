@@ -12,3 +12,6 @@ def find_outlier(integers):
       allOdd = allEven
       index = allOdd.index(sorted(allOdd)[0])
       return integers[index]
+
+#would be faster to use python "list comprehension"
+# [x for x in integers if x%2==0] --> gives you back a list of even numbers. size(list) could give you count
