@@ -11,3 +11,7 @@ def DNA_strand(dna):
     complementaryStrand = [dictionary[x] for x in dna]
     return "".join(complementaryStrand)
     # code here
+
+#Refer to Python String maketrans()
+#https://www.programiz.com/python-programming/methods/string/maketrans
+#comes out of the box with Python3
