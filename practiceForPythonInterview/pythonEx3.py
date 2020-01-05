@@ -17,3 +17,6 @@ def find_next_square(sq):
       return (math.sqrt(sq)+1)**2
     else:
         return -1
+
+# can do root = sq ** 0.5
+#to take sqaure root without "import math"
