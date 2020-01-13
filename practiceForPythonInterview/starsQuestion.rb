@@ -40,4 +40,4 @@ stars = {
 }
 
 
-closest_stars(stars, 4)
+puts closest_stars(stars, 4)
