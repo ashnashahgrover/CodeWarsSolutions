@@ -21,12 +21,6 @@ function inCommon(arr1, arr2){
 }
 
 function longestSubstring(string1, string2){
-  //Make an array of the substrings starting with the largest possible substring i.e. n
-  // for both strings
-
-  //check if the arrays have anything in common
-
-  //if not, make a new array with n-1 length substrings, compare, repeat
 
   let shorterString = (string2.length<string1.length) ? string2 : string1
   let longerString = (string2.length>string1.length) ? string2 : string1
@@ -53,7 +47,29 @@ function longestSubstring(string1, string2){
     //O(n*m)
     let commonSubStrings = inCommon(shorterStringSubStrings, longerStringSubStrings)
     if (commonSubStrings.length>0){return commonSubStrings[0]}
-
+    //overall timecomplexity: O(n^2 * m)
   }
   return "No Common SubStrings"
 }
+
+function longest_common_starting_substring(str1, str2){
+  const shorterLength= str1.length;
+  let i= 0;
+  let longestSubstring
+  let previousSubstring = ""
+  let currentSubstring
+    while (i < shorterLength){
+      while(a1.charAt(i)=== a2.charAt(i)){
+        currentSubstring=a1.substring(0, i);
+        i++
+      }
+      if (currentSubstring.length>previousSubstring.length){
+        longestSubstring=currentSubstring
+        previousSubstring=currentSubstring
+      }
+      debugger
+    }
+
+}
+
+// trying an alternative approach - its going nowhere
